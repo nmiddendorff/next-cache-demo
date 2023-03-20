@@ -14,7 +14,6 @@ export default function Page(): JSX.Element {
     >
       <div className={styles.container}>
         <Suspense fallback={<p>Loading fresh data...</p>}>
-          {/* @ts-expect-error Async Server Component */}
           <DynamicContent />
         </Suspense>
       </div>
